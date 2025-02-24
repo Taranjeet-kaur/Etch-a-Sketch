@@ -15,6 +15,10 @@ if(isNaN(n)||n<=0){
                 let squareDiv = document.createElement("div")
                 squareDiv.classList.add("square")
 
+                squareDiv.addEventListener("click",()=>{
+                    squareDiv.style.backgroundColor = "white";
+                })
+
                 squareDiv.addEventListener("mouseover", (event)=>{
                  if((event.buttons === 1) ||(event.button === 2) ){
                     
